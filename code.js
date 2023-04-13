@@ -196,8 +196,13 @@ function renderNew() {
     let newPerson = addPerson()
     for (let i = 0; i < selected.length; i++) {
         if (selected[i].name == newPerson.name) {
-            alert(newPerson.name + " անուն ազգանունով անձ արդեն կա գրանցված " + selected[i].region + " վարչական շրջանի " + selected[i].city + " համայնքում")
-            return 1
+            let alert = confirm(newPerson.name + " անուն ազգանունով անձ արդեն կա գրանցված " + selected[i].region + " վարչական շրջանի " + selected[i].city + " համայնքում" + `\n` + "Շարունակե՞լ")
+            if(alert){
+                continue
+            }else{
+                return 1
+
+            }
         }
     }
     let nameSureName = newPerson.name.split(" ")
