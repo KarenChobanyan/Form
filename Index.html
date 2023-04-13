@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="formSheet" id="">
+        <form  name="form">
+            <div class="line1">
+                <div>Մուտքագրեք գրանցվողի տվյալները</div>
+            </div>
+            <div class="line2">
+                <div class="td">
+                    <div class="label">Անուն</div>
+                    <input type="text" name="name" class="input" required />
+                </div>
+                <div class="td">
+                    <div class="label">Ազգանուն</div>
+                    <input type="text" name="sureName" class="input" required />
+                </div>
+            </div>
+            <div class="line2">
+                <div class="td">
+                    <div class="label">Վարչական շրջան</div>
+                    <select name="region" class="select" required>
+                        <option value="check" disabled selected hidden> - - - - - Ընտրել - - - - -</option>
+                    </select>
+                </div>
+                <div class="td">
+                    <div class="label">Վարչական միավոր</div>
+                    <select name="city" class="select" required>
+                    </select>
+                </div>
+            </div>
+            <div class="line3">
+                <div> 
+                    <button  name="buttonSubmit">Հաստատել</button>
+                </div>
+                <div>
+                    <button type="reset" name="buttonReset">Չեղարկել</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="main">
+        <div class="info">
+            <div class="num">№</div>
+            <div class="namePlace">Անուն Ազգանուն</div>
+            <div class="region">Շրջան</div>
+            <div class="unit">Վարչական միավոր</div>
+            <div class="postIndex">Փոստային ինդեքս</div>
+        </div>
+    </div>
+    <script src="./code.js">
+
+    </script>
+</body>
+
+
+</html>
